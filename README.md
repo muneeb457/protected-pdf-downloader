@@ -1,4 +1,4 @@
-# 🚀 Google Drive Protected PDF Downloader
+# Google Drive Protected PDF Downloader
 
 This project provides an efficient and secure method to download view-only protected PDF files from Google Drive using a browser script. By leveraging the powerful `jsPDF` library, this script seamlessly converts images into a downloadable PDF format.
 
